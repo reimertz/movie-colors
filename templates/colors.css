@@ -1,0 +1,16 @@
+/*
+* @preserve {{ packageName }} {{ version }}
+* http://github.com/reimertz/{{ packageName }}
+* (c) 2016 Pierre Reimertz
+* may be freely distributed under the MIT license.
+*/
+
+
+{% for color in colors %}
+.{{ prefix }}-{{color.name}} {
+  color: {{color.hex}};
+}
+.{{ prefix }}-{{color.name}}-bg {
+  background-color: {{color.hex}};
+}
+{% endfor %}
